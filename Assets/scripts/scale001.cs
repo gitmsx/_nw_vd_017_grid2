@@ -126,7 +126,7 @@ public class scale001 : MonoBehaviour
         float VolumeZ = Mathf.Lerp(SlingMinZ, SlingMaxZ, curve.Evaluate(elapsedTimeZ / timeSling));
 
         Text12.text = "elapsedTime " + Math.Round(elapsedTimeX, digits: 3).ToString() + "X " + Math.Round(VolumeX, digits: 3).ToString() + "  Y " + Math.Round(VolumeY, digits: 3).ToString() + "  Z " + Math.Round(VolumeZ, digits: 3).ToString();
-        Text12.text = "X " + Math.Round(VolumeX, digits: 3).ToString() + "  Y " + Math.Round(VolumeY, digits: 3).ToString() + "  Z " + Math.Round(VolumeZ, digits: 3).ToString();
+      //  Text12.text = "X " + Math.Round(VolumeX, digits: 3).ToString() + "  Y " + Math.Round(VolumeY, digits: 3).ToString() + "  Z " + Math.Round(VolumeZ, digits: 3).ToString();
 
         transform.localScale = new Vector3(transformlocalScale.x + VolumeX, transformlocalScale.y + VolumeY, transformlocalScale.z + VolumeZ);
 
